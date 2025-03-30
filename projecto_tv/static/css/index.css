@@ -1,0 +1,17 @@
+body {
+    background: #ffffff;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding-top: 60px;
+}
+.container {
+    max-width: 500px;
+    margin: auto;
+}
+.container a {
+    text-decoration: none;
+    color: #fff;
+    background: #007bff;
+    padding: 10px 20px;
+    border-radius: 5px;
+}

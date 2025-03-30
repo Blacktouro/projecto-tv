@@ -1,0 +1,105 @@
+/* ===== TOPO ===== */
+.topo {
+    background-color: #1f1f1f;
+    color: white;
+    text-align: center;
+    padding-bottom: 0;
+    border-bottom: 2px solid #444;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.6);
+}
+
+/* ===== LOGO ===== */
+.logo-box {
+    background-color: #000;
+    padding: 30px 0;
+    text-align: center;
+}
+
+.logo-box img {
+    max-width: 200px;
+    height: auto;
+    filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.25));
+    transition: transform 0.3s ease-in-out;
+}
+
+.logo-box img:hover {
+    transform: scale(1.05);
+}
+
+/* ===== BANNER ===== */
+.banner img {
+    width: 100%;
+    max-height: 550px;
+    object-fit: cover;
+    border-top: 2px solid #444;
+    border-bottom: 2px solid #444;
+}
+
+/* ===== NAVBAR CLEAN & FLAT ===== */
+.navbar {
+    background-color: #1a1a1a;
+    border-top: 1px solid #333;
+    border-bottom: 1px solid #333;
+    padding: 12px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    z-index: 10;
+}
+
+.navbar ul,
+.nav-list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar li {
+    display: inline-block;
+}
+
+.navbar a,
+.nav-link {
+    text-decoration: none;
+    color: #f0f0f0;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 10px 18px;
+    border-radius: 6px;
+    transition: background 0.3s ease;
+}
+
+.navbar a:hover,
+.nav-link:hover {
+    background-color: #ff6600;
+    color: #fff;
+    box-shadow: 0 0 10px #ff6600;
+}
+
+/* Botão logout */
+.logout {
+    color: #e74c3c;
+}
+
+.logout:hover {
+    background-color: #800000;
+    color: white;
+}
+
+/* ===== RESPONSIVO (MOBILE) ===== */
+@media (max-width: 768px) {
+    .logo-box img {
+        max-width: 140px;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .banner img {
+        max-height: 300px;
+    }
+}

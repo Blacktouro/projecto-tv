@@ -1,0 +1,19 @@
+<header class="topo">
+    <div class="logo">
+        <img src="{{ url_for('static', filename='img/logo.png') }}" alt="Logo" />
+    </div>
+
+    <div class="banner">
+        <img src="{{ url_for('static', filename='img/banner.jpg') }}" alt="Banner">
+    </div>
+
+    <nav class="navbar">
+        <ul>
+            <li><a href="#">Início</a></li>
+            <li><a href="#">Anúncios</a></li>
+            <li><a href="#">Estatísticas</a></li>
+            <li><a href="#">Definições</a></li>
+            <li><a href="{{ url_for('logout') }}">Sair</a></li>
+        </ul>
+    </nav>
+</header>
